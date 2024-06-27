@@ -18,7 +18,7 @@ body img {
 header {
     font-family: "monaspace";
     background-image: url("images/Header+Background+Code+Dev.jpg");
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     padding: 20px;
     height: 100px;
@@ -58,6 +58,7 @@ header .logo a {
     padding: 20px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     font-family: monaspace;
 }
 
@@ -78,6 +79,7 @@ header .logo a {
     background-size: contain;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     font-family: monaspace;
     padding: 100px;
 }
@@ -89,7 +91,7 @@ header .logo a {
 }
 
 nav ul {
-    margin: 0;
+
     padding: 0;
     list-style-type: none;
     text-align: center;
@@ -109,6 +111,14 @@ nav li {
         display: none;
     }
 }
+
+/* RESPONSIVE RULES
+@media screen and (max-width: 600px) {
+    .features {
+        display: inline-block;
+    }
+}
+*/
 
 a {
     text-decoration: none;
@@ -133,7 +143,7 @@ footer {
 }
 
 
-/* desktop settings */
+/* desktop settings
 @media screen and (max-width: 100px) {
     .features {
         display: inline-block;
@@ -141,4 +151,4 @@ footer {
         padding: 10px;
         align-content: center;
     }
-}
+} */
