@@ -16,7 +16,7 @@ body img {
     height: 100%;
 }
 header {
-    font-family: monaspace;
+    font-family: "monaspace";
     background-image: url("images/Header+Background+Code+Dev.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
@@ -24,6 +24,10 @@ header {
     height: 100px;
     width: 100%;
     font-size: large;
+}
+
+header .mobile {
+    display: none;
 }
 
 header .logo a {
@@ -44,8 +48,8 @@ header .logo a {
 }
 
 @font-face {
-    font-family: monaspace;
-    src: local(MonaspaceNeon-WideRegular), 
+    font-family: "monaspace";
+    src: local(MonaspaceNeon-WideRegular),
     url(C:\Windows\Fonts\MonaspaceNeon-WideRegular.otf);
 }
 
@@ -96,6 +100,16 @@ nav li {
     margin-right: 20px;
 }
 
+/* RESPONSIVE RULES */
+@media screen and (max-width: 600px) {
+    header .mobile {
+        display: inline-block;
+    }
+    header .desktop {
+        display: none;
+    }
+}
+
 a {
     text-decoration: none;
     color: aliceblue;
@@ -116,4 +130,15 @@ footer {
     position: absolute;
     margin-top: 40px;
     width: 100%;
+}
+
+
+/* desktop settings */
+@media screen and (max-width: 100px) {
+    .features {
+        display: inline-block;
+        margin: auto;
+        padding: 10px;
+        align-content: center;
+    }
 }
